@@ -106,9 +106,8 @@ console.log("ubicacion elegida: " + ubicacionBuscada)
 
     if (login === true){
       let tiempo = parseInt(prompt ("indique la duracion de su estadia"))
-      const hora = 18
-      const valorEstadia = (tiempo, hora) =>{
-        return tiempo * hora
-      } 
-      console.log ("su precio a abonar es " + valorEstadia(tiempo, hora))
+      
+vehiculo1.horasEstadia = tiempo;
+
+console.log("Su precio a abonar es $" + vehiculo1.calcularCosto());
     }
